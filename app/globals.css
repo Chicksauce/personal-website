@@ -22,6 +22,7 @@ body {
   flex-direction: column;
   line-height: 1.85;
   letter-spacing: 0.01em;
+  font-size: 1.05rem;
 }
 
 a {
@@ -99,7 +100,7 @@ h1 {
 }
 
 .lede {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: var(--muted);
   margin: 0;
 }
