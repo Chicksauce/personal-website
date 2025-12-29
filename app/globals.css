@@ -1,11 +1,10 @@
 :root {
   color-scheme: dark;
-  --background: #151412;
-  --surface: #1c1a17;
-  --text: #f2ede6;
-  --muted: #c1b7aa;
-  --accent: #d6c3a5;
-  --accent-soft: #b9b096;
+  --background: #0e0f12;
+  --surface: #14161b;
+  --text: #f4f1ec;
+  --muted: #b6b2aa;
+  --accent: #d8c9b6;
 }
 
 * {
@@ -20,7 +19,7 @@ body {
   color: var(--text);
   display: flex;
   flex-direction: column;
-  line-height: 1.8;
+  line-height: 1.6;
   letter-spacing: 0.01em;
 }
 
@@ -37,6 +36,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid rgba(244, 241, 236, 0.08);
   padding-bottom: 20px;
 }
 
@@ -62,17 +62,17 @@ a {
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: var(--accent);
+  color: var(--text);
 }
 
 .page {
   flex: 1;
-  padding: 80px 10vw 110px;
+  padding: 72px 10vw 96px;
 }
 
 .hero,
 .content {
-  max-width: 560px;
+  max-width: 640px;
 }
 
 .eyebrow {
@@ -84,18 +84,9 @@ a {
 }
 
 h1 {
-  font-family: "Cormorant Garamond", "Garamond", "Times New Roman", serif;
-  font-size: clamp(2.3rem, 3vw, 3.1rem);
+  font-size: clamp(2.2rem, 3vw, 3rem);
   font-weight: 500;
-  margin: 0 0 28px;
-}
-
-.content h2 {
-  font-family: "Cormorant Garamond", "Garamond", "Times New Roman", serif;
-  font-size: 1.7rem;
-  font-weight: 500;
-  margin: 32px 0 16px;
-  color: var(--text);
+  margin: 0 0 24px;
 }
 
 .lede {
@@ -106,7 +97,7 @@ h1 {
 
 .content p {
   color: var(--muted);
-  margin: 0 0 22px;
+  margin: 0 0 20px;
 }
 
 .site-footer {
