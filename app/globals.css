@@ -1,10 +1,11 @@
 :root {
   color-scheme: dark;
-  --background: #0e0f12;
-  --surface: #14161b;
-  --text: #f4f1ec;
-  --muted: #b6b2aa;
-  --accent: #d8c9b6;
+  --background: #181613;
+  --surface: #201d19;
+  --text: #f4efe7;
+  --muted: #c8beb2;
+  --accent: #d7c1a0;
+  --accent-soft: #bba991;
 }
 
 * {
@@ -19,7 +20,7 @@ body {
   color: var(--text);
   display: flex;
   flex-direction: column;
-  line-height: 1.6;
+  line-height: 1.85;
   letter-spacing: 0.01em;
 }
 
@@ -36,7 +37,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(244, 241, 236, 0.08);
   padding-bottom: 20px;
 }
 
@@ -62,17 +62,17 @@ a {
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: var(--text);
+  color: var(--accent);
 }
 
 .page {
   flex: 1;
-  padding: 72px 10vw 96px;
+  padding: 84px 10vw 120px;
 }
 
 .hero,
 .content {
-  max-width: 640px;
+  max-width: 540px;
 }
 
 .eyebrow {
@@ -84,9 +84,18 @@ a {
 }
 
 h1 {
-  font-size: clamp(2.2rem, 3vw, 3rem);
+  font-family: "Cormorant Garamond", "Garamond", "Times New Roman", serif;
+  font-size: clamp(2.3rem, 3vw, 3.1rem);
   font-weight: 500;
-  margin: 0 0 24px;
+  margin: 0 0 30px;
+}
+
+.content h2 {
+  font-family: "Cormorant Garamond", "Garamond", "Times New Roman", serif;
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin: 32px 0 16px;
+  color: var(--text);
 }
 
 .lede {
@@ -97,13 +106,33 @@ h1 {
 
 .content p {
   color: var(--muted);
-  margin: 0 0 20px;
+  margin: 0 0 24px;
 }
 
 .site-footer {
   padding: 0 10vw 40px;
   color: var(--muted);
   font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.footer-link {
+  color: var(--accent-soft);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover,
+.footer-link:focus-visible {
+  color: var(--accent);
 }
 
 @media (max-width: 720px) {

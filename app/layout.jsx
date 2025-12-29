@@ -1,4 +1,5 @@
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 import SiteNav from "./components/SiteNav";
 
 export const metadata = {
@@ -7,6 +8,8 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const currentYear = new Date().getFullYear();
+
   return (
     <html lang="en">
       <body>
@@ -15,8 +18,18 @@ export default function RootLayout({ children }) {
         </header>
         <main className="page">{children}</main>
         <footer className="site-footer">
-          <p>© 2024 Jill Ji</p>
+          <p>© {currentYear} Jill Ji</p>
+          <a
+            className="footer-link"
+            href="https://www.instagram.com/_jill.ji_/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Follow Jill Ji on Instagram"
+          >
+            Instagram
+          </a>
         </footer>
+        <Analytics />
       </body>
     </html>
   );
