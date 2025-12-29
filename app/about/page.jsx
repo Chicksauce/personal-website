@@ -4,14 +4,17 @@ export default function AboutPage() {
       <p className="eyebrow">About</p>
       <h1>Polished, calm, and editorial.</h1>
       <p>
-        I’m Jill Ji. I write and create around slow mornings, intentional
-        choices, and the quiet confidence that comes from knowing what matters
-        most. This space is where I collect reflections on style, ritual, and
-        everyday beauty.
+        I’m Jill. I’m drawn to beauty that feels lived-in, conversations that go
+        somewhere, and systems that make life gentler instead of louder.
       </p>
       <p>
-        When I’m not working on a new idea, you’ll find me resetting my space,
-        exploring cafés, curating playlists, or walking without a destination.
+        I’ve built a stable, outwardly successful life—but what matters more to
+        me is how it feels day to day. I care about consistency, emotional
+        presence, and designing a life that can hold both intensity and rest.
+      </p>
+      <p>
+        This site isn’t a portfolio. It’s a record of attention—what I’m
+        learning, refining, and choosing to stay with.
       </p>
     </section>
   );
